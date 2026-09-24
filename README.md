@@ -1,6 +1,6 @@
 MicroIntern 🚀
 
-MicroIntern is a front-end web platform that connects students with local businesses for small, short-term tasks and projects.
+MicroIntern is a frontend web platform that connects students with local businesses for small, short-term tasks and projects.
 💡 Features
 - Explore micro-tasks and opportunities
 - Helps students gain practical experience
