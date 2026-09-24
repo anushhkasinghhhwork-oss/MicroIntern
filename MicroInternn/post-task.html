@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Post a Task — MicroIntern</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <input type="checkbox" id="nav-check" class="nav-check">
+    <a href="index.html" class="logo">Micro<span>Intern</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="tasks.html">Find Tasks</a></li>
+      <li><a href="profiles.html">Students</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+    <div class="auth-buttons">
+      <a href="post-task.html" class="btn btn-dark">Post a Task</a>
+      <a href="login.html" class="btn btn-ghost">Log in</a>
+      <a href="register.html" class="btn btn-primary">Register</a>
+    </div>
+    <label for="nav-check" class="nav-toggle" aria-label="Toggle menu">☰</label>
+  </nav>
+
+  <header class="page-hero">
+    <div class="wrap">
+      <p class="eyebrow">For businesses</p>
+      <h1>Post a task</h1>
+    </div>
+  </header>
+
+  <div class="post-wrap">
+    <p style="color:var(--ink-soft); margin-bottom:1.4rem;">
+      Describe the task clearly and it'll go straight onto the board. This is a demo — no account or payment needed to try it, and nothing is saved yet.
+    </p>
+
+    <form class="post-form" id="post-task-form" action="post-task.html#posted" method="get">
+      <div>
+        <label for="title">Task title</label>
+        <input type="text" id="title" placeholder="e.g. Design a poster for our open day" required>
+      </div>
+
+      <div class="row-2">
+        <div>
+          <label for="category">Category</label>
+          <select id="category" required>
+            <option value="design">Design</option>
+            <option value="data">Data Entry</option>
+            <option value="content">Content Writing</option>
+            <option value="marketing">Marketing</option>
+            <option value="dev">Web Dev</option>
+            <option value="video">Video Editing</option>
+            <option value="research">Research</option>
+          </select>
+        </div>
+        <div>
+          <label for="biz">Business name</label>
+          <input type="text" id="biz" placeholder="Your business" required>
+        </div>
+      </div>
+
+      <div>
+        <label for="desc">Description</label>
+        <textarea id="desc" rows="4" placeholder="What needs to be done, and any context a student would need." required></textarea>
+      </div>
+
+      <div>
+        <label for="deliverables">Deliverables (comma-separated)</label>
+        <input type="text" id="deliverables" placeholder="e.g. Final PNG file, Source file">
+      </div>
+
+      <div>
+        <label for="skills">Skills needed (comma-separated)</label>
+        <input type="text" id="skills" placeholder="e.g. Figma, Canva">
+      </div>
+
+      <div class="row-2">
+        <div>
+          <label for="pay">Pay (₹)</label>
+          <input type="number" id="pay" placeholder="1500" min="0" required>
+        </div>
+        <div>
+          <label for="duration">Timeline</label>
+          <input type="text" id="duration" placeholder="e.g. 3 days" required>
+        </div>
+      </div>
+
+      <p class="form-success" id="posted">Thanks — this is a demo, so your task wasn\'t saved.</p>
+
+      <button type="submit" class="btn btn-primary btn-block">Post Task</button>
+    </form>
+  </div>
+
+  <footer class="footer">
+    <p class="footer-bottom">© 2026 MicroIntern. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

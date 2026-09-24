@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Find Tasks — MicroIntern</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <input type="checkbox" id="nav-check" class="nav-check">
+    <a href="index.html" class="logo">Micro<span>Intern</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="tasks.html" class="active">Find Tasks</a></li>
+      <li><a href="profiles.html">Students</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+    <div class="auth-buttons">
+      <a href="post-task.html" class="btn btn-dark">Post a Task</a>
+      <a href="login.html" class="btn btn-ghost">Log in</a>
+      <a href="register.html" class="btn btn-primary">Register</a>
+    </div>
+    <label for="nav-check" class="nav-toggle" aria-label="Toggle menu">☰</label>
+  </nav>
+
+  <header class="board-head">
+    <div class="wrap">
+      <h1>Find your next task</h1>
+      <p>Filter by category to find tasks that fit your skills. Click a card to see the full brief.</p>
+    </div>
+  </header>
+
+  <div class="board-filter">
+    <input type="radio" name="cat" id="f-all" class="filter-radio" checked>
+    <input type="radio" name="cat" id="f-design" class="filter-radio">
+    <input type="radio" name="cat" id="f-data" class="filter-radio">
+    <input type="radio" name="cat" id="f-content" class="filter-radio">
+    <input type="radio" name="cat" id="f-marketing" class="filter-radio">
+    <input type="radio" name="cat" id="f-dev" class="filter-radio">
+    <input type="radio" name="cat" id="f-video" class="filter-radio">
+    <input type="radio" name="cat" id="f-research" class="filter-radio">
+    <div class="filter-bar">
+      <label for="f-all">All Tasks</label>
+      <label for="f-design">Design</label>
+      <label for="f-data">Data Entry</label>
+      <label for="f-content">Content Writing</label>
+      <label for="f-marketing">Marketing</label>
+      <label for="f-dev">Web Dev</label>
+      <label for="f-video">Video Editing</label>
+      <label for="f-research">Research</label>
+    </div>
+    <div class="task-board" id="task-board">
+    <a class="task-card" data-category="design" href="task-1.html">
+      <div class="pin"></div>
+      <span class="tag">🎨 Design</span>
+      <h3>Instagram carousel for a bakery launch</h3>
+      <div class="biz">Sundar Bakehouse · Ghaziabad</div>
+      <p class="desc">Design a 6-slide carousel announcing our new sourdough range. Brand colors and photos provided.</p>
+      <div class="skills"><span>Canva</span><span>Figma</span><span>Social Media</span></div>
+      <div class="meta"><span class="pay">₹1,800</span><span class="duration">Due in 3 days</span></div>
+    </a>
+    <a class="task-card" data-category="data" href="task-2.html">
+      <div class="pin"></div>
+      <span class="tag">📊 Data Entry</span>
+      <h3>Clean up a vendor pricing spreadsheet</h3>
+      <div class="biz">Cartwheel Foods</div>
+      <p class="desc">Standardise 300 rows of vendor pricing data across three inconsistent formats into one sheet.</p>
+      <div class="skills"><span>Excel</span><span>Google Sheets</span></div>
+      <div class="meta"><span class="pay">₹900</span><span class="duration">Due in 1 day</span></div>
+    </a>
+    <a class="task-card" data-category="content" href="task-3.html">
+      <div class="pin"></div>
+      <span class="tag">✍️ Content Writing</span>
+      <h3>Write 5 product descriptions</h3>
+      <div class="biz">Noor Handloom Co.</div>
+      <p class="desc">Write short, warm product copy for five handloom saree listings, 100–150 words each.</p>
+      <div class="skills"><span>Copywriting</span><span>SEO Basics</span></div>
+      <div class="meta"><span class="pay">₹1,200</span><span class="duration">Due in 2 days</span></div>
+    </a>
+    <a class="task-card" data-category="marketing" href="task-4.html">
+      <div class="pin"></div>
+      <span class="tag">📢 Marketing</span>
+      <h3>Set up and schedule a week of social posts</h3>
+      <div class="biz">Loop Fitness Studio</div>
+      <p class="desc">Plan and schedule 7 days of Instagram and Facebook posts using our existing photo library.</p>
+      <div class="skills"><span>Buffer</span><span>Content Calendars</span></div>
+      <div class="meta"><span class="pay">₹1,500</span><span class="duration">Due in 4 days</span></div>
+    </a>
+    <a class="task-card" data-category="dev" href="task-5.html">
+      <div class="pin"></div>
+      <span class="tag">💻 Web Dev</span>
+      <h3>Fix mobile layout on a landing page</h3>
+      <div class="biz">Kavya Interiors</div>
+      <p class="desc">Our landing page breaks below 480px. Needs a quick CSS fix and a cross-browser check.</p>
+      <div class="skills"><span>HTML/CSS</span><span>Responsive Design</span></div>
+      <div class="meta"><span class="pay">₹2,200</span><span class="duration">Due in 2 days</span></div>
+    </a>
+    <a class="task-card" data-category="video" href="task-6.html">
+      <div class="pin"></div>
+      <span class="tag">🎬 Video Editing</span>
+      <h3>Edit a 60-second reel from raw footage</h3>
+      <div class="biz">Third Wave Coffee Roasters</div>
+      <p class="desc">Cut down 8 minutes of café footage into a 60-second reel with captions and trending audio.</p>
+      <div class="skills"><span>CapCut</span><span>Premiere Pro</span></div>
+      <div class="meta"><span class="pay">₹1,600</span><span class="duration">Due in 3 days</span></div>
+    </a>
+    <a class="task-card" data-category="research" href="task-7.html">
+      <div class="pin"></div>
+      <span class="tag">🔎 Research</span>
+      <h3>Compile a list of 50 local suppliers</h3>
+      <div class="biz">Meadow &amp; Co.</div>
+      <p class="desc">Research and compile contact details for 50 packaging suppliers across North India.</p>
+      <div class="skills"><span>Market Research</span><span>Google Sheets</span></div>
+      <div class="meta"><span class="pay">₹1,100</span><span class="duration">Due in 3 days</span></div>
+    </a>
+    <a class="task-card" data-category="design" href="task-8.html">
+      <div class="pin"></div>
+      <span class="tag">🎨 Design</span>
+      <h3>Design a tri-fold event brochure</h3>
+      <div class="biz">Riverside Public School</div>
+      <p class="desc">Design a printable tri-fold brochure for our annual sports day, using our existing logo and colors.</p>
+      <div class="skills"><span>Illustrator</span><span>Print Design</span></div>
+      <div class="meta"><span class="pay">₹1,400</span><span class="duration">Due in 4 days</span></div>
+    </a>
+    <a class="task-card" data-category="content" href="task-9.html">
+      <div class="pin"></div>
+      <span class="tag">✍️ Content Writing</span>
+      <h3>Write a 4-part email onboarding series</h3>
+      <div class="biz">Paperlane Stationery</div>
+      <p class="desc">Draft a friendly 4-email welcome series for new newsletter subscribers.</p>
+      <div class="skills"><span>Email Copy</span><span>Tone of Voice</span></div>
+      <div class="meta"><span class="pay">₹1,700</span><span class="duration">Due in 5 days</span></div>
+    </a>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand">Micro<span>Intern</span></div>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h4>Platform</h4>
+          <a href="tasks.html">Find Tasks</a>
+          <a href="profiles.html">Students</a>
+          <a href="about.html">About</a>
+          <a href="post-task.html">Post a Task</a>
+        </div>
+        <div class="footer-col">
+          <h4>Account</h4>
+          <a href="login.html">Log in</a>
+          <a href="register.html">Register</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+      </div>
+    </div>
+    <p class="footer-bottom">© 2026 MicroIntern. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

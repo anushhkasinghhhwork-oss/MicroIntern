@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact MicroIntern</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <input type="checkbox" id="nav-check" class="nav-check">
+    <a href="index.html" class="logo">Micro<span>Intern</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="tasks.html">Find Tasks</a></li>
+      <li><a href="profiles.html">Students</a></li>
+      <li><a href="contact.html" class="active">Contact Us</a></li>
+    </ul>
+    <div class="auth-buttons">
+      <a href="post-task.html" class="btn btn-dark">Post a Task</a>
+      <a href="login.html" class="btn btn-ghost">Log in</a>
+      <a href="register.html" class="btn btn-primary">Register</a>
+    </div>
+    <label for="nav-check" class="nav-toggle" aria-label="Toggle menu">☰</label>
+  </nav>
+
+  <header class="page-hero">
+    <div class="wrap">
+      <p class="eyebrow">Get in touch</p>
+      <h1>We'd love to hear from you</h1>
+    </div>
+  </header>
+
+  <section class="contact-layout">
+    <div class="contact-info">
+      <h2>Whether you're a student or a business</h2>
+      <p>Have a question about posting a task, claiming one, or getting paid? Send us a message and we'll get back to you.</p>
+      <div class="info-row"><span class="k">Email</span><span>hello@microintern.example</span></div>
+      <div class="info-row"><span class="k">Support</span><span>Mon–Sat, 10am–7pm IST</span></div>
+      <div class="info-row"><span class="k">Based in</span><span>Ghaziabad, Uttar Pradesh, India</span></div>
+    </div>
+
+    <form class="contact-form" action="contact.html#sent" method="get">
+      <div class="form-success" id="sent">Thanks — your message has been noted. We'll reply soon.</div>
+
+      <div>
+        <label for="role">I am a</label>
+        <select id="role">
+          <option>Student</option>
+          <option>Business</option>
+          <option>Just browsing</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Your name" required>
+      </div>
+
+      <div>
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="you@example.com" required>
+      </div>
+
+      <div>
+        <label for="message">Message</label>
+        <textarea id="message" rows="5" placeholder="How can we help?" required></textarea>
+      </div>
+
+      <p class="form-note">This form is a demo — messages aren't sent anywhere yet.</p>
+      <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand">Micro<span>Intern</span></div>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h4>Platform</h4>
+          <a href="tasks.html">Find Tasks</a>
+          <a href="profiles.html">Students</a>
+          <a href="about.html">About</a>
+          <a href="post-task.html">Post a Task</a>
+        </div>
+        <div class="footer-col">
+          <h4>Account</h4>
+          <a href="login.html">Log in</a>
+          <a href="register.html">Register</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+      </div>
+    </div>
+    <p class="footer-bottom">© 2026 MicroIntern. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

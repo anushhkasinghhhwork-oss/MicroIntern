@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register — MicroIntern</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <input type="checkbox" id="nav-check" class="nav-check">
+    <a href="index.html" class="logo">Micro<span>Intern</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="tasks.html">Find Tasks</a></li>
+      <li><a href="profiles.html">Students</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+    <div class="auth-buttons">
+      <a href="post-task.html" class="btn btn-dark">Post a Task</a>
+      <a href="login.html" class="btn btn-ghost">Log in</a>
+      <a href="register.html" class="btn btn-primary">Register</a>
+    </div>
+    <label for="nav-check" class="nav-toggle" aria-label="Toggle menu">☰</label>
+  </nav>
+
+  <div class="auth-wrap">
+    <div class="auth-card">
+      <p class="eyebrow-dark">Join the board</p>
+      <h1>Create an account</h1>
+      <p>Tell us who you are so we can show you the right side of the board.</p>
+
+      <div class="role-toggle">
+        <label>
+          <input type="radio" name="role" value="student" checked>
+          <span>I'm a student</span>
+        </label>
+        <label>
+          <input type="radio" name="role" value="business">
+          <span>I'm a business</span>
+        </label>
+      </div>
+
+      <form class="auth-form" action="register.html#demo" method="get">
+        <div>
+          <label for="name">Full name</label>
+          <input type="text" id="name" placeholder="Your name" required>
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="you@example.com" required>
+        </div>
+        <div>
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Create a password" required>
+        </div>
+        <p class="form-success" id="demo">This is a demo — no account created.</p>
+        <button type="submit" class="btn btn-primary btn-block">Create Account</button>
+      </form>
+
+      <p class="auth-switch">Already have an account? <a href="login.html">Log in</a></p>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p class="footer-bottom">© 2026 MicroIntern. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
